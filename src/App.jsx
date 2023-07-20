@@ -1,5 +1,8 @@
-import Tabela from './components/Tabela/Tabela'
 import TituloDoPrograma from './components/Titulo/TituloDoPrograma'
+import Tabela from './components/Tabela/Tabela'
+
+import './global.css'
+
 
 
 function App() {
@@ -7,9 +10,10 @@ function App() {
 
   return (
     <>
-      <TituloDoPrograma />
-      <Tabela />
-
+    <div className="container">
+        <TituloDoPrograma />
+        <Tabela />
+    </div>
 
 
     </>
