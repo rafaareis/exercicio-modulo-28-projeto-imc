@@ -1,0 +1,16 @@
+.art{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.h2Main {
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
+.par {
+    text-align: justify;
+    padding-bottom: 10px;
+}

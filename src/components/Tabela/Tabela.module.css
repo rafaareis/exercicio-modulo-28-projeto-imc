@@ -3,5 +3,6 @@
     border: 2px solid black;
     text-align: center;
     min-width: 10px;
-    width: 50%;
+    width: 80%;
+    margin: 0 auto;
 }

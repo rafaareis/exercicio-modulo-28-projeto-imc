@@ -1,9 +1,10 @@
-import TituloDoPrograma from './components/Titulo/TituloDoPrograma'
+import TituloNav from './components/Titulo/TituloNav'
+import Significado from './components/Significado/Significado'
 import Tabela from './components/Tabela/Tabela'
+import Rodape from './components/Rodape/Rodape'
+
 
 import './global.css'
-
-
 
 function App() {
 
@@ -11,8 +12,10 @@ function App() {
   return (
     <>
     <div className="container">
-        <TituloDoPrograma />
+        <TituloNav />
+        <Significado />
         <Tabela />
+        <Rodape />
     </div>
 
 

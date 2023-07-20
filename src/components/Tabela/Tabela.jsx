@@ -17,7 +17,6 @@ function Tabela() {
 
     return (
         <>
-            <h2>Tabela</h2>
             <table className={styles.IMCtable}>
                 <thead>
                     <tr>

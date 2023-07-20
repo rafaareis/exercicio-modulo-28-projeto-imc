@@ -1,4 +1,27 @@
 {
+
+    "tituloDaPagina": [
+        {
+            "id": 1,
+            "name": "Tabela IMC"
+        }
+    ],
+
+    "navegacao": [
+        {
+            "id": 1,
+            "name": "Definição"
+        },
+        {
+            "id": 2,
+            "name": "Tabela"
+        },
+        {
+            "id": 3,
+            "name": "Cálculo"
+        }
+    ],
+
     "tabelaDeIMC": [
 
         {
