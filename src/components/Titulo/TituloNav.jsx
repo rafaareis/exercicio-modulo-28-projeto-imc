@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import styles from './TituloNav.module.css'
 
 
 function TituloNav() {
@@ -27,16 +28,32 @@ function TituloNav() {
 
     return (
       <>
-        <div>
+        <div className={styles.navTitle}>
         {tituloArr.map(titulo => {
           return (
             <>
-              <div key={titulo.id}>
+              <div 
+                className={styles.title}
+                key={titulo.id}
+              >
                 <h1>{titulo.name}</h1>
               </div>
             </>
           )
         })}
+          <nav className={styles.navigation}>
+          {navArr.map(navItem => {
+            return (
+              <> 
+                  <ul 
+                    className={styles.navUl}
+                    key={navItem.id}>
+                    <li><a href={`#${navItem.idName}`}>{navItem.name}</a></li>
+                  </ul>
+              </>
+            )
+          })}
+          </nav>
         </div>
       </>
     )

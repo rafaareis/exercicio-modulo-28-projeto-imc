@@ -1,8 +1,24 @@
+:root {
+    --cor2 : #67a8cd;
+    --cor7: #f2d096;
+    --cor4: #aaa;
+}
+
 .IMCtable {
-    background-color: aqua;
+    background-color: var(--cor2);
     border: 2px solid black;
     text-align: center;
     min-width: 10px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+}
+
+.tableTitle {
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.tabela_art {
+    border: 2px solid var(--cor4)
 }

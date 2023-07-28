@@ -1,0 +1,73 @@
+:root {
+    --cor4: #aaa;
+    --cor6: #fff;
+    --cor7: #f2d096;
+}
+
+.calc {
+    border: 2px solid var(--cor7)
+}
+
+.calculo_title h1 {
+    font-size: 30px;
+    padding: 10px 0;
+    text-decoration: underline;
+}
+
+.calculo_content {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    padding: 10px 0;
+}
+
+.calculo_content div {
+    border: 1px solid var(--cor4);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 198px;
+    font-size: 38px;
+}
+
+.calculo_content .imc {
+    display: block;
+    padding-top: 20px;
+    color: var(--cor4);
+    background-color: var(--cor6);
+}
+
+.calculo_content .nivel {
+    display: block;
+    padding-top: 2px;
+    color: var(--cor4);
+    background-color: var(--cor6);
+}
+
+.calculo_content .input {
+    height: 100px;
+    width: 198px;
+    font-size: 38px;
+    text-align: center;
+    color: var(--cor4);
+}
+
+.calculo_content .input::placeholder {
+    font-size: 15px;
+    text-align: center;
+}
+
+.calculo_content .nivel header,
+.calculo_content .nivel footer {
+    font-size: 15px;
+}
+
+.calculo_recommendation {
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.calculo_recommendation p {
+    padding: 10px 20px;
+}

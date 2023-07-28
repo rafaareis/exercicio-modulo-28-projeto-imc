@@ -1,16 +1,24 @@
+:root {
+    --cor7: #f2d096;
+    --cor4: #aaa;
+}
+
 .art{
     width: 800px;
     margin: 0 auto;
+    border: 2px solid var(--cor4);
 }
 
 .h2Main {
     font-size: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
-
+    text-decoration: underline;
 }
 
 .par {
     text-align: justify;
-    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }

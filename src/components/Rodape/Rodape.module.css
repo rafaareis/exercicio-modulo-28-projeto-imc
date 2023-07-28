@@ -1,5 +1,14 @@
+:root {
+    --cor7: #f2d096;
+}
+
+.rodape {
+    border: 2px solid var(--cor7)
+}
+
 footer p {
     text-align: center;
     font-size: 20px;
     padding: 20px;
+    color: var(--cor7);
 }
