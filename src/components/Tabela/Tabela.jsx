@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import styles from './Tabela.module.css'
 
 function Tabela() {
-    const endpoint = "./src/components/Tabela/tabelaIMC.json"
+    const endpoint = "./src/components/Tabela/tabelaIMC.js"
     const [tabelaArr, setTabelaArr] = useState([]);
     const [estaCarregando, setEstaCarregando] = useState(true);
 
