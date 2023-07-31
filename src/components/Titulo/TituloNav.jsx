@@ -3,7 +3,7 @@ import styles from './TituloNav.module.css'
 
 
 function TituloNav() {
-  const endpoint = "./src/components/Tabela/tabelaIMC.js"
+  const endpoint = "./db/tabelaIMC.json"
   const [tituloArr, setTituloArr] = useState([])
   const [navArr, setNavArr] = useState([])
 

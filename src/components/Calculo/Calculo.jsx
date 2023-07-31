@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from './Calculo.module.css'
 
 function Calculo() {
-    const endpoint = "./src/components/Tabela/tabelaIMC.js"
+    const endpoint = "./db/tabelaIMC.json"
     const [meuPeso, setMeuPeso] = useState('');
     const [minhaAltura, setMinhaAltura] = useState('');
     const [resArr, setResArr] = useState([]);
