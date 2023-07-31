@@ -3,25 +3,26 @@ import styles from './TituloNav.module.css'
 
 
 function TituloNav() {
-  const endpoint = "./db/tabelaIMC.json"
+  const tituloDaPaginaURL = "https://json-server-api-ex-28.vercel.app/tituloDaPagina"
+  const navegacaoURL = "https://json-server-api-ex-28.vercel.app/navegacao"
   const [tituloArr, setTituloArr] = useState([])
   const [navArr, setNavArr] = useState([])
 
   useEffect(() => {
-    fetch(endpoint)
+    fetch(tituloDaPaginaURL)
     .then(res => res.json())
     .then(reJson => {
-      setTituloArr(reJson.tituloDaPagina)
-      console.log(reJson.tituloDaPagina)
+      setTituloArr(reJson)
+      console.log(reJson)
     })
   }, [])
 
   useEffect(() => {
-    fetch(endpoint)
+    fetch(navegacaoURL)
     .then(res => res.json())
     .then(reJson => {
-      setNavArr(reJson.navegacao)
-      console.log(reJson.navegacao)
+      setNavArr(reJson)
+      console.log(reJson)
     })
   }, [])
 

@@ -2,18 +2,18 @@ import { useEffect, useState } from "react"
 import styles from './Tabela.module.css'
 
 function Tabela() {
-    const endpoint = "./db/tabelaIMC.json"
+    const tabelaDeIMCURL = "https://json-server-api-ex-28.vercel.app/tabelaDeIMC"
     const [tabelaArr, setTabelaArr] = useState([]);
     const [estaCarregando, setEstaCarregando] = useState(true);
 
 
     useEffect(() => {
-        fetch(endpoint)
+        fetch(tabelaDeIMCURL)
         .then(res => res.json())
         .then(reJson => {
             setTimeout(() => {
                 setEstaCarregando(false)
-                setTabelaArr(reJson.tabelaDeIMC)
+                setTabelaArr(reJson)
             }, 2000)
             
             // console.log(reJson.tabelaDeIMC)

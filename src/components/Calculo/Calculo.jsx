@@ -2,21 +2,19 @@ import { useEffect, useState } from "react";
 import styles from './Calculo.module.css'
 
 function Calculo() {
-    const endpoint = "./db/tabelaIMC.json"
+    const tabelaDeIMCURL = "https://json-server-api-ex-28.vercel.app/tabelaDeIMC"
     const [meuPeso, setMeuPeso] = useState('');
     const [minhaAltura, setMinhaAltura] = useState('');
     const [resArr, setResArr] = useState([]);
     const [imcResults, setImcResults] = useState('');
-    const [estaCarregando, setEstaCarregando] = useState(true)
 
     useEffect(() => {
-        fetch(endpoint)
+        fetch(tabelaDeIMCURL)
         .then(res => res.json())
         .then(reJson => {
             setTimeout(() => {
-                setEstaCarregando(false)
                 setResArr(resultado);                
-                setResArr(reJson.tabelaDeIMC);
+                setResArr(reJson);
             }, 3000)
             
         })
